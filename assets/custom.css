@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+
+/* Defines the Custom Font */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Inter-Regular.woff2'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/Inter-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Inter-Medium.woff2'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/Inter-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/Inter-SemiBold.woff2'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/Inter-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Inter-Bold.woff2'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/Inter-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+
+
+/* Sets the Custom Font for the different elements */
+.group-title {
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.title {
+	font-family: Inter;
+    font-weight: 700;
+}
+
+.subtitle {
+	font-family: Inter;
+    font-weight: 400;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+	font-family: Inter;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+body #bighead .navbar-start a.navbar-item {
+	font-family: Inter;
+}
+
+body p {
+	font-family: Inter;
+}
+
+span {
+	font-family: Inter;
+    font-weight: 400;
+}
+
+
+
+/* Adds spacing to the bottom of cards */
+body .layout-vertical .column .card {
+    margin-bottom: 1rem;
+}
+
+body .layout-vertical .column .card {
+    margin-bottom: 1rem;
+}
+
+
+
+/*Adds more border radius to the cards */
+body .layout-vertical .column div:first-of-type .card {
+    border-radius: 16px;
+    border: solid;
+    border-color: var(--border-color);
+    border-width: 1px;
+}
+
+body .layout-vertical .card {
+    border-radius: 16px;
+    border: solid;
+    border-color: var(--border-color);
+    border-width: 1px;
+}
+
+body .card {
+    border-radius: 16px;
+    border: solid;
+    border-color: var(--border-color);
+    border-width: 1px;
+}
+
+body .layout-vertical .column div:last-of-type .card { 
+    border-radius: 16px; 
+}
+
+
+
+/* Custom styling for Message Box */
+body .message {
+    margin-top: 25px !important;
+    margin-bottom: 40px !important;
+    border-radius: 16px;
+    border: solid;
+    border-color: var(--message-bg);
+    border-width: 1px;
+}
+
+body #app .message {
+    background-color: var(--message-bg);
+    box-shadow: none;
+}
+
+body .message .message-header {
+    color: var(--message-headline) !important;
+    font-weight: 600 !important;
+    margin: 8px 8px 0 8px;
+    background-color: var(--message-highlight) !important;
+    border-radius: 8px;
+    border-color: var(--message-highlight);
+}
+
+body .message {
+    font-family: Inter;
+}
+
+
+
+/* Adds spacing above the Header*/
+#bighead {
+	padding-top: 20px;
+}
+
+
+
+/* Changes Header Opacity */
+body #bighead .first-line {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body #bighead .navbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body .search-bar input {
+    opacity: 20%;
+}
+
+body #bighead .navbar a:focus, body #bighead .navbar a:hover {
+    color: var(--link);
+}
+
+body #bighead .navbar>.container {
+	padding-left: 24px;
+	padding-right: 12px;
+	padding-bottom: 24px;
+	padding-top: 8px;
+}
+
+
+
+/* Changes the appearance of the navbar items */
+body #bighead .navbar-start a.navbar-item {
+	font-weight: 500;
+	border-style: solid;
+	border-color: var(--border-color);
+	border-width: 1px;
+	border-radius: 50px;
+	padding: 0px 18px;
+}
+
+body #bighead .navbar-start a.navbar-item:hover {
+	background-color: var(--card-background);
+}
+
+body #bighead .navbar-end a.navbar-item:hover {
+	background-color: transparent;
+}
+
+body #bighead .navbar-start {
+	display: flex;
+	gap: 10px;
+}
+
+
+
+/* Smaller tweaks to different elements */
+body #app .footer {
+	background-color: var(--background);
+	box-shadow: none;
+}
+
+body .card-content {
+	height: 90px;
+}
+
+body .media-content {
+    padding-top:4px;
+}
+
+
+
+/* Hides the tags */
+body .tag {
+	display: none;
+}
