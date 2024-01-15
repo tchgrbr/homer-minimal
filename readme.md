@@ -35,36 +35,6 @@ Download and extract [this repo](https://github.com/tchgrbr/homer-minimal).
 
 Move the content of the `assets` folder into your Homers `www` folder.
 
-### Terminal
-
-Clone [this repo](https://github.com/tchgrbr/homer-minimal). You can do this by running:
-
-```sh
-$ git clone https://github.com/tchgrbr/homer-minmal.git
-```
-
-Now cd into the newly created folder.
-
-```sh
-$ cd Homer-Theme
-```
-
-And now for the final step move the `assets` folder into your Homers `www` folder.
-You can find this directory by running
-
-```sh
-$ sudo docker inspect -f '{{ .Mounts }}' homer
-```
-
-Move the folder by running
-
-```sh
-$ sudo mv assets /homer/www
-```
-_Make sure you replace `/homer/www` with the location of **your homers** www folder._
-
-#### Go to your Homer-Dashboard IP and port and see the result!
-
 ## Customization
 
 General customization is the same as in the vanilla version of Homer. Check out the [Github Repo](https://github.com/bastienwirtz/homer) for further instructions.
