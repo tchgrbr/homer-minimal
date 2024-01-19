@@ -16,8 +16,10 @@ Homer Minimal is a clean and aesthethic theme for the [Homer Dashboard](https://
 
 ## Preview
 
+<img alt="Homer Minimal Demo" src="https://raw.githubusercontent.com/tchgrbr/homer-minimal/main/homer-minimal-demo.gif">
+
 <p align="left">
- <details open>
+ <details>
   <summary>Dark mode</summary>
    <img alt="Homer Minimal" src="https://raw.githubusercontent.com/tchgrbr/homer-minimal/main/preview-dark.png">
  </details>
