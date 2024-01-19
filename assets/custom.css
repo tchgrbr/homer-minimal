@@ -218,9 +218,22 @@ body .media-content {
     padding-top:4px;
 }
 
-
-
-/* Hides the tags */
+/* Tag customization */
 body .tag {
-	display: none;
+    font-family: Inter;
+    width: auto;
+    right: 16px;
+    border-radius: 16px;
+    opacity: 0;
+    transition: opacity .4s ease-out;
 }
+
+body .card:hover .tag {
+    opacity: 1;
+}
+
+
+/* Hides the tags if commented in */
+/*body .tag {
+	display: none;
+}*/
