@@ -89,12 +89,14 @@ services:
         logo: "assets/tools/sample.png"
         subtitle: "Document Management"
         tag: "app"
+        tagstyle: is-info
         url: "https://github.com"
         target: "_blank"
       - name: "Plex"
         logo: "assets/tools/sample.png"
         subtitle: "Media Server"
         tag: "app"
+        tagstyle: is-danger
         url: "https://github.com"
         target: "_blank"
       - name: "Photoprism"
