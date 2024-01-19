@@ -1,4 +1,4 @@
-<img src="/data/icons/logo.png" width="96" align="right" />
+<img src="/assets/icons/logo.png" width="96" align="right" />
 
 # Homer Minimal
 
