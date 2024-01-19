@@ -1,4 +1,4 @@
-<img src="/assets/icons/logo.png" width="96" align="right" />
+<img src="/data/icons/logo.png" width="96" align="right" />
 
 # Homer Minimal
 
@@ -9,6 +9,8 @@ Homer Minimal is a clean and aesthethic theme for the [Homer Dashboard](https://
 - Custom icons
 - More spacing between cards
 - Rounded Borders
+- Tags are initially hidden
+- Updated Tag position
 - Simplified Header
 - No shadows
 
@@ -34,6 +36,36 @@ Homer Minimal is a clean and aesthethic theme for the [Homer Dashboard](https://
 Download and extract [this repo](https://github.com/tchgrbr/homer-minimal).
 
 Move the content of the `assets` folder into your Homers `www` folder.
+
+### Terminal
+
+Clone [this repo](https://github.com/tchgrbr/homer-minimal). You can do this by running:
+
+```sh
+$ git clone https://github.com/tchgrbr/homer-minmal.git
+```
+
+Now cd into the newly created folder.
+
+```sh
+$ cd Homer-Theme
+```
+
+And now for the final step move the `assets` folder into your Homers `www` folder.
+You can find this directory by running
+
+```sh
+$ sudo docker inspect -f '{{ .Mounts }}' homer
+```
+
+Move the folder by running
+
+```sh
+$ sudo mv assets /homer/www
+```
+_Make sure you replace `/homer/www` with the location of **your homers** www folder._
+
+#### Go to your Homer-Dashboard IP and port and see the result!
 
 ## Customization
 
@@ -63,3 +95,14 @@ The standard font for Homer Minimal is [Inter](https://rsms.me/inter/). You can 
 
 ### Colors
 All the colors are defined in `config.yaml`, including some newly added variables, which aren't defined in the inital version of Homer. Usage is the same: You can change them by simply editing the HEX-Values. You can change them independently for dark and light mode.
+
+### Tags
+Tags are now not visible by default, only on hover. The tags can be hidden in the `custom.css` file if desired by commenting in the property. Color customization works like in the default homer version, by utilizing the `tag-style` property from Bulma CSS in your `config.yaml`.
+
+Homer uses bulma CSS, which provides a modifiers syntax. You'll notice in the config there is a tagstyle option. It can be set to any of the bulma modifiers. You'll probably want to use one of these 4 main colors:
+
+- `is-info` (blue)
+- `is-success` (green)
+- `is-warning` (yellow)
+- `is-danger` (red)
+
